@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - Staging
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - Staging
+      -main
 
 jobs:
   run-lint:
